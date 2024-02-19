@@ -4,6 +4,6 @@
 ## 메인 브랜치 푸시 제어  
 - 퍼블릭으로 레포지토리를 열었기 때문에 나 이외의 누군가가 이 깃에 접근하는 것이 가능함
 - 이에 따라 내 전용 메인 브랜치를 보호할 필요가 있음
-- ![image](https://github.com/Zerotay/gunfra/assets/67823010/87d249e3-211c-4d9d-9a88-38a13b38ff6d)
+- ![image](https://github.com/Zerotay/gunfra/assets/67823010/7ae1388f-a95e-4949-b52a-b13d6f7b499a)
 - lock을 걸어서 설정
 
