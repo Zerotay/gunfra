@@ -14,8 +14,7 @@ if not %CUR_PATH% ==  C:\Users\SSAFY\ssafy_ip_setting (
 		exit /b 1
 		)
 
-copy AUTO_IP_SETTING.bat "C:\Users\SSAFY\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+schtasks /create /tn "SSAFY_ip_setting" /tr "C:\Users\SSAFY\ssafy_ip_setting\AUTO_IP_SETTING.bat" /sc onevent /ec Security /mo "*[System[(EventID=4624)]] and *[EventData[Data[@Name='LogonType']='2']]" 
 
-REM dir "C:\Users\SSAFY\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 echo 설정이 완료되었습니다! 컴퓨터를 킬 때 ip 설정이 자동으로 적용됩니다.
 timeout /t -1 
