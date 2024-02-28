@@ -31,4 +31,4 @@ set SUBNET=
 set GATEWAY=
 set DNS1=
 set DNS2=
-timeout /t 3
+timeout /t 2
