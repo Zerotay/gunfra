@@ -8,10 +8,9 @@
 - 초기 세팅을 진행하면 이후부터는 추가적인 설정 없이 동작합니다.
 
 ## 구조
+![image](https://github.com/Zerotay/gunfra/assets/67823010/67a1fdd2-5619-45b4-8268-80d3ac74a64d)
 
-![파일구조](https://github.com/Zerotay/gunfra/assets/67823010/ce3a4b72-faff-4be7-abc8-a2dad8ca3184)
-
-- allow_on_batteries.ps1 - 배터리 구동 관련 파일
+- allow_on_batteries.ps1 - 배터리 구동 상황 관련 파일
 - AUTO_IP_SETTING.bat - 자동화 스크립트 파일
 - delete.bat - 자동 설정 off
 - env.txt - 세팅 값들이 들어가는 파일
@@ -50,7 +49,7 @@
 - 개선사항, 버그 관련 제보 환영합니다
 - Made By 싸피 10기 1045374 김동건
 - Contributor : 싸피 10기 강이규, 김도현
-- Ver 2.1.2
+- Ver 2.2.0
 
 ## <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
@@ -95,8 +94,10 @@
 
 ## 버전 2.2
 
-- 노트북이 배터리로 사용될 때는 스크립트가 자동으로 발생하지 않는 이슈
-  - 이러한 설정이 기본값으로 걸려있었음
+- 노트북이 배터리로 사용될 때는 스크립트가 자동으로 발생하지 않는 이슈  
+  ![image](https://github.com/Zerotay/gunfra/assets/67823010/88c0e4ab-1a28-4067-9183-9468b525f6cb)
+
+  - 이러한 설정이 기본값으로 걸려있었음. 전원 연결 안 돼있을 시 실행되지 않음
   - 단순히 cmd 환경에서는 설정할 수 없다고 함(왜..? cmd 안 챙기나..?)
     - 파일을 xml 형식으로 export시킨 후 관련 부분만 수정해서 새로 등록하기
     - 아니면 파워쉘 사용하기
