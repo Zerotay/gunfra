@@ -8,6 +8,7 @@
 - 초기 세팅을 진행하면 이후부터는 추가적인 설정 없이 동작합니다.
 
 ## 구조
+![파일구조](https://github.com/Zerotay/gunfra/assets/67823010/ce3a4b72-faff-4be7-abc8-a2dad8ca3184)
 
 - AUTO_IP_SETTING.bat - 자동화 스크립트 파일
 - delete.bat - 자동 설정 off
@@ -31,7 +32,8 @@
     ```
     - IP ~ DNS2는 SSAFY에서 제공받은 값을 입력해주세요.
     - 인터페이스명은 win+q 이후 "네트워크 연결 보기"를 검색하여 파악할 수 있습니다. Wi-Fi거나, Wi-Fi 2일 겁니다.
-      ![INTERFACE 확인법](interface확인.png)
+      ![interface확인](https://github.com/Zerotay/gunfra/assets/67823010/bdcf0e8c-823b-4a83-856b-5056616b121f)
+
     - WIFI는 연결할 wifi 이름을 적어주시면 됩니다.
   - 설정이 완료되었다면 `init.bat`을 더블클릭해 실행해주세요.
   - 완료됐습니다!
