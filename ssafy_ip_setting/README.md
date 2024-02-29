@@ -7,33 +7,41 @@
 - 노트북을 킬 때마다 실행되어 자동으로 네트워크 설정을 진행해드립니다!
 - 초기 세팅을 진행하면 이후부터는 추가적인 설정 없이 동작합니다.
 
+## 구조
+
+- AUTO_IP_SETTING.bat - 자동화 스크립트 파일
+- delete.bat - 자동 설정 off
+- env.txt - 세팅 값들이 들어가는 파일
+- init.bat - 자동 설정 on
+- README.md - 설명 문서
+
 ## 사용법
 
 - 초기 세팅
-  - 디렉터리를 사용자 홈 디렉터리(SSAFY) 바로 밑에 위치시켜주세요.
+  - 이 디렉터리를 사용자 홈 디렉서리(C:\Users\SSAFY) 바로 밑에 위치시켜주세요.
   - `env.txt` 파일을 메모장으로 열어서 각종 값을 넣어주세요.
     ```bash
-    set INTERFACE=Wi-Fi 2
-    set WIFI=SSAFY_1234
+    set INTERFACE=인터페이스명
+    set WIFI=연결할 wifi명
     set IP=11.11.11.11
     set SUBNET=255.255.255.255
     set GATEWAY=11.11.11.1
     set DNS1=123.123.123.123
     set DNS2=123.123.123.123
     ```
-    - 위와 같은 방식으로 세팅해주세요.
-    - INTERFACE는 win+q 이후 "네트워크 연결 보기"를 검색하여 파악할 수 있습니다. Wi-Fi거나, Wi-Fi 2일 겁니다.
-    - WIFI는 사용하는 공유기 이름(층마다 다름)을 적어주시면 됩니다.
-    - 나머지는 처음 ip 주소 받은 문자 보고 알아서..!
+    - IP ~ DNS2는 SSAFY에서 제공받은 값을 입력해주세요.
+    - 인터페이스명은 win+q 이후 "네트워크 연결 보기"를 검색하여 파악할 수 있습니다. Wi-Fi거나, Wi-Fi 2일 겁니다.
+      ![INTERFACE 확인법](interface확인.png)
+    - WIFI는 연결할 wifi 이름을 적어주시면 됩니다.
   - 설정이 완료되었다면 `init.bat`을 더블클릭해 실행해주세요.
   - 완료됐습니다!
-- 삭제하기
-  - `delete.bat`을 실행해주세요.........
+  - `init.bat`, `delete.bat` 을 실행 시 기능을 on/off 할 수 있습니다.
 
 ## 참고사항
 
 - 개선사항, 버그 관련 제보 환영합니다
 - Made By 싸피 10기 1045374 김동건
+- Contributor : 싸피 10기 강이규
 - Ver 2.1.2
 
 ## <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
