@@ -15,6 +15,8 @@ if not %CUR_PATH% ==  C:\Users\SSAFY\ssafy_ip_setting (
 		)
 
 schtasks /create /tn "SSAFY_ip_setting" /tr "C:\Users\SSAFY\ssafy_ip_setting\AUTO_IP_SETTING.bat" /sc onevent /ec Security /mo "*[System[(EventID=4624)]] and *[EventData[Data[@Name='LogonType']='2']]" 
-
+powershell Set-ExecutionPolicy RemoteSigned
+powershell C:\Users\SSAFY\ssafy_ip_setting\allow_on_batteries.ps1
+powershell Set-ExecutionPolicy Restricted 
 echo 설정이 완료되었습니다! 컴퓨터를 킬 때 ip 설정이 자동으로 적용됩니다.
 timeout /t -1 
